@@ -1,2 +1,10 @@
 # python_tutorial
-python tutorial
+### python tutorial
+
+Hello world
+
+My name is Alex Li
+
+- Tunghai university
+- Global MBA
+
