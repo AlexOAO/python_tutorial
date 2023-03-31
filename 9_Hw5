@@ -1,0 +1,18 @@
+#
+# Template for Python program
+#
+
+import pandas as pd
+
+# 1. Input
+raw_data = pd.read_csv("Menu.csv")
+print(raw_data)                 #print table
+print(raw_data.info())          #print table info
+
+# 2. Process
+alphabetic = raw_data.sort_values(by="Menu") #alphabetic
+
+
+# 3. Output
+
+print(f"Alphabetic: {alphabetic}")
