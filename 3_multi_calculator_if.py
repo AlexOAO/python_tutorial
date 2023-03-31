@@ -11,7 +11,7 @@ op = input("Enter operator: ")
 
 # 2. Process
 if op == "+":
-    sum = int(x1) + int(X2)
+    sum = int(x1) + int(x2)
 elif op == "-":
     sum = int(x1) - int(x2)
 
