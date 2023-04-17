@@ -1,0 +1,75 @@
+
+###add sum
+def my_add(intput):
+    sum = 0
+    for x in input:
+        sum += int(x)
+    return sum
+
+#1. Input 
+input = [10,20,30]
+
+#2. Process 
+answer = my_add(input)
+
+#3. Output
+print(f'Answers: {answer}')
+
+
+
+###multipy sum
+def my_add(intput):
+    sum = 1
+    for x in input:
+        sum *= int(x)
+    return sum
+
+#1. Input 
+input = [10,20,30]
+
+#2. Process 
+answer = my_add(input)
+
+#3. Output
+print(f'Answers: {answer}')
+
+
+
+###Calculate  sd
+
+## pip3 install statistics
+## print input 
+## calculate length 
+## sum = 0
+## calculate mean
+## print mean
+## for x in input
+## (sum(x)-u) square 
+## sum devide length(input)
+## output sqrt
+## return
+
+
+
+import statistics, math
+
+def my_sd(input):
+    print(f'Input : {input}')
+    length = len(input)
+    sum = 0
+    mean = statistics.mean(input)
+    print(f'Mean  : {mean}')
+    for x in input:
+        sum += (int(x) - mean)**2
+    sum = sum / length
+    output = math.sqrt(sum)    
+    return output
+
+# 1. Input
+input = [10,20,30]
+
+# 2. Process
+answer = my_sd(input)
+
+# 3. Output
+print(f'Answer: {answer}')
