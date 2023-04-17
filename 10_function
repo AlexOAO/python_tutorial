@@ -39,14 +39,16 @@ print(f'Answers: {answer}')
 
 ## pip3 install statistics
 ## print input 
-## calculate length 
+
+## length calculate  
 ## sum = 0
-## calculate mean
+## mean calculate 
 ## print mean
-## for x in input
+
+## for x in input:
 ## (sum(x)-u) square 
 ## sum devide length(input)
-## output sqrt
+## sqrt calculate and output
 ## return
 
 
@@ -67,6 +69,7 @@ def my_sd(input):
 
 # 1. Input
 input = [10,20,30]
+input = [20,23,18]
 
 # 2. Process
 answer = my_sd(input)
