@@ -73,6 +73,8 @@ input = [20,23,18]
 
 # 2. Process
 answer = my_sd(input)
+answer = round(answer, 3)
 
 # 3. Output
 print(f'Answer: {answer}')
+

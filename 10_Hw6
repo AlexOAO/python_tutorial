@@ -1,0 +1,34 @@
+#
+# Population Covariance for Python program
+#
+import statistics, math
+
+def my_covariance(input_x, input_y):
+    print(f'Input x : {input_x}')
+    print(f'Input y : {input_y}')
+    cov = 0 
+    result1 = 0
+    result2 = 0
+    length = len(input_x)
+    mean_x = statistics.mean(input_x)
+    mean_y = statistics.mean(input_y)
+    print(f'Mean  : {mean_x}')
+    print(f'Mean  : {mean_y}')
+    for x in input_x:
+        result1 == (int(x) - mean_x)
+    for y in input_y:
+        result2 == (int(y) - mean_y)
+    
+    cov += (result1*result2)/ length
+    return cov
+
+# 1. Input
+input_x = [10,20,30]
+input_y = [12,21,33]
+
+# 2. Process
+answer = my_covariance(input_x, input_y)
+answer = round(answer, 2)
+
+# 3. Output
+print(f'Answer: {answer}')
