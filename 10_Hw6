@@ -7,19 +7,14 @@ def my_covariance(input_x, input_y):
     print(f'Input x : {input_x}')
     print(f'Input y : {input_y}')
     cov = 0 
-    result1 = 0
-    result2 = 0
     length = len(input_x)
     mean_x = statistics.mean(input_x)
     mean_y = statistics.mean(input_y)
-    print(f'Mean  : {mean_x}')
-    print(f'Mean  : {mean_y}')
-    for x in input_x:
-        result1 == (int(x) - mean_x)
-    for y in input_y:
-        result2 == (int(y) - mean_y)
-    
-    cov += (result1*result2)/ length
+    print(f'Mean X : {mean_x}')
+    print(f'Mean Y : {mean_y}')
+    for i in range(length):
+        cov += (input_x[i]- mean_x) * (input_y[i]-mean_y)
+    cov /= length
     return cov
 
 # 1. Input
